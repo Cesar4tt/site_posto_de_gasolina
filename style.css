@@ -39,10 +39,10 @@ main {
 }
 
 #nav-list {
-    list-style: none;
     display: flex;
-    margin-left: -20rem;
+    list-style: none;
     margin-top: 18px;
+    flex-wrap: wrap;
 }
 
 #nav-list li{
@@ -189,4 +189,10 @@ footer {
     background-color: rgba(255, 217, 168, 0.39);
     font-size: 0.9rem;
     padding: 1.5rem;
+}
+
+@media screen and (max-width: 900px){
+    #footer_conteiner{
+        grid-template-columns: repeat(3, 1rf);
+    }
 }
